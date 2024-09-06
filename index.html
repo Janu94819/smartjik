@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart jik home</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+     />
+     <link rel="stylesheet" href="style1.css">
+
+
+
+
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site.pdn.ac.lk/cgu/assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+     <style>
+        .star i{
+            font-size: 12px;
+            color: #eeb20e;
+        }
+
+        #close{
+            display: none;
+        }
+
+        @media (max-width:900px) {
+           
+            .section-p1{
+    padding: 40px 40px;
+}
+            #newsletter .form{
+            width: 90%;
+        }
+        #navbar.active{
+        right: 0px;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 200px;
+        background-color: #f0f3f1;
+        box-shadow: 0 40px 60px rgba(90, 87, 87, 0.03);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #close{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #121311;
+        font-size: 24px;
+        display: initial;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #hero{
+            
+            height: 70vh;
+             padding: 0 80px;
+             background-position: top 10% right 10%;
+           
+        }
+        #feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* #feature .fe-box{
+    
+    margin: 15px 15px;
+
+} */
+
+.pro-container{
+    justify-content: center;
+}
+
+footer{
+
+    justify-content: center;
+    text-align: center;
+
+
+        }
+
+
+      
+
+@media screen and (min-width: 600px){
+    #hero h2{
+      color: white;
+    }
+
+}
+
+@media screen and (min-width: 300px){
+    #hero h2,h4{
+      color: white;
+
+    }
+
+}
+
+@keyframes smart {
+  from {color: #222;}
+  to {color: white;}
+  /*0%   {color:red; }
+  25%  {color:yellow; }
+  50%  {color:blue; }
+  75%  {color:green; }
+  100% {color:#222; }*/
+}
+
+
+        
+     </style>
+    
+</head>
+<body>
+    <section id="header">
+        <a href="#" style="text-decoration:none;">
+            <img src="img/backgroundnew/logo.png" alt="" class="logo" style="width: 100px;">
+        </a>
+        <div>
+            <ul id="navbar">
+                <li>
+                    <a class="active" href="index.html">home</a></li>
+                   <!-- <li> <a href="product.html">shop</a></li> -->
+                    <!-- <li><a href="about.html">about</a></li> -->
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="login/login_form.php">Login</a></li>
+                    <!-- <li><a href="login/admin_page.php">Admin</a></li> -->
+                   
+                
+                    <!-- <li><a href="image upload/cart_images.php">cart img</a> </li>
+                   <li><a href="cart.html" id="lg-bag"><i class="fa-solid fa-cart-shopping"></i></a></li> -->
+                   <a href="#" id="close"><i class="fas fa-times"></i></a>
+                       
+                    
+                   
+                </li>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+            
+        </div>
+    </section>
+    <section id="hero" style="background-image: url(img/backgroundnew/bg_new.jpg);">
+       <!--  <h4>Trade in offer</h4>
+        <h2>Supper Value Deals</h2> -->
+        <h1 style="animation-name: smart; animation-duration: 4s; animation-delay: -2s;
+        font-size:60px;color: #FAF7A9;
+        animation-play-state:running;
+        " >Smart JIK</h1>
+        <!-- <p>save more with coupons & up to 10% off</p>
+        <button>Sop Now</button> -->
+    </section>
+
+    
+    <!-- <section id="feature" class="section-p1">
+        <div class="container">
+        <div class="fe-box">
+            <img src="img/backgroundnew/cover1.jpg" alt="">
+            <h6> low price shiping</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="img/backgroundnew/cover1.jpg" alt="">
+            <h6> Online Order</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="img/backgroundnew/cover1.jpg" alt="">
+            <h6> Save Money</h6>
+        </div>
+
+        <div class="fe-box">
+            <img src="img/backgroundnew/cover1.jpg" alt="">
+            <h6> Save Time</h6>
+        </div>
+        </div>
+    </section> -->
+
+
+    <section id="product1" class="section-p1" style="text-align: center;background-color: white;">
+<h2 ></h2>
+<a href="image upload/cart_images.php">feature</a>
+ 
+<div class="pro-container" style="
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding-top: 20px">
+
+
+    <div class="pro" style=" width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #088178;
+    border-radius:25px ;
+    transition:0.2s ease;
+    position: relative;
+    margin: 10px;
+    
+   ">
+        <img src="img/backgroundnew/cover2.jpg" alt="" style="width: 100%;
+        border-radius:20px ;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+        margin: 15px 0;">
+        <div class="des" style="text-align: start;
+        padding: 10px 0;">
+<span style=" color: #b826a4;
+font-size: 12px;">Pencils</span>
+<h5 style="padding-top:7px ;
+color: #11330b;
+font-size: 14px;">Pencils</h5>
+<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+</div>
+<h4 style="padding-top: 7px;
+font-size: 15px;
+font-weight: 700;
+color: #228be0;">LKR100</h4>
+        </div>
+        <a href="#" style=" width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #cce7d0;
+        font-weight: 500;
+        color: #11330b;
+        border: 1px solid #cce7d0;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+        
+    </div>
+
+    <div class="pro" style=" width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #088178;
+    border-radius:25px ;
+    transition:0.2s ease;
+    position: relative;
+    margin: 10px;
+    ">
+        <img src="img/backgroundnew/cover3.jpg" alt="" style="width: 100%;
+        border-radius:20px ;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+        margin: 15px 0;">
+        <div class="des" style="text-align: start;
+        padding: 10px 0;">
+<span style=" color: #b826a4;
+font-size: 12px;">Pencils</span>
+<h5 style="padding-top:7px ;
+color: #11330b;
+font-size: 14px;">Pencils</h5>
+<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+</div>
+<h4 style="padding-top: 7px;
+font-size: 15px;
+font-weight: 700;
+color: #228be0;">LKR100</h4>
+        </div>
+        <a href="#" style=" width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #cce7d0;
+        font-weight: 500;
+        color: #11330b;
+        border: 1px solid #cce7d0;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+        
+    </div>
+
+    <div class="pro" style=" width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #088178;
+    border-radius:25px ;
+    transition:0.2s ease;
+    position: relative;
+    margin: 10px;
+    ">
+        <img src="img/backgroundnew/cover3.jpg" alt="" style="width: 100%;
+        border-radius:20px ;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+        margin: 15px 0;">
+        <div class="des" style="text-align: start;
+        padding: 10px 0;">
+<span style=" color: #b826a4;
+font-size: 12px;">Pencils</span>
+<h5 style="padding-top:7px ;
+color: #11330b;
+font-size: 14px;">Pencils</h5>
+<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+</div>
+<h4 style="padding-top: 7px;
+font-size: 15px;
+font-weight: 700;
+color: #228be0;">LKR100</h4>
+        </div>
+        <a href="#" style=" width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #cce7d0;
+        font-weight: 500;
+        color: #11330b;
+        border: 1px solid #cce7d0;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+        
+    </div>
+
+    <div class="pro" style=" width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #088178;
+    border-radius:25px ;
+    transition:0.2s ease;
+    position: relative;
+    margin: 10px;
+    ">
+        <img src="img/backgroundnew/cover3.jpg" alt="" style="width: 100%;
+        border-radius:20px ;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+        margin: 15px 0;">
+        <div class="des" style="text-align: start;
+        padding: 10px 0;">
+<span style=" color: #b826a4;
+font-size: 12px;">Pencils</span>
+<h5 style="padding-top:7px ;
+color: #11330b;
+font-size: 14px;">Pencils</h5>
+<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+</div>
+<h4 style="padding-top: 7px;
+font-size: 15px;
+font-weight: 700;
+color: #228be0;">LKR100</h4>
+        </div>
+        <a href="#" style=" width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #cce7d0;
+        font-weight: 500;
+        color: #11330b;
+        border: 1px solid #cce7d0;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+        
+    </div>
+
+    <div class="pro" style=" width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #088178;
+    border-radius:25px ;
+    transition:0.2s ease;
+    position: relative;
+    margin: 10px;
+    ">
+        <img src="img/backgroundnew/cover3.jpg" alt="" style="width: 100%;
+        border-radius:20px ;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+        margin: 15px 0;">
+        <div class="des" style="text-align: start;
+        padding: 10px 0;">
+<span style=" color: #b826a4;
+font-size: 12px;">Pencils</span>
+<h5 style="padding-top:7px ;
+color: #11330b;
+font-size: 14px;">Pencils</h5>
+<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+</div>
+<h4 style="padding-top: 7px;
+font-size: 15px;
+font-weight: 700;
+color: #228be0;">LKR100</h4>
+        </div>
+        <a href="#" style=" width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #cce7d0;
+        font-weight: 500;
+        color: #11330b;
+        border: 1px solid #cce7d0;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+        
+    </div>
+    <div class="pro" style=" width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #088178;
+    border-radius:25px ;
+    transition:0.2s ease;
+    position: relative;
+    margin: 10px;
+    ">
+        <img src="img/backgroundnew/cover3.jpg" alt="" style="width: 100%;
+        border-radius:20px ;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+        margin: 15px 0;">
+        <div class="des" style="text-align: start;
+        padding: 10px 0;">
+<span style=" color: #b826a4;
+font-size: 12px;">Pencils</span>
+<h5 style="padding-top:7px ;
+color: #11330b;
+font-size: 14px;">Pencils</h5>
+<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+</div>
+<h4 style="padding-top: 7px;
+font-size: 15px;
+font-weight: 700;
+color: #228be0;">LKR100</h4>
+        </div>
+        <a href="#" style=" width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #cce7d0;
+        font-weight: 500;
+        color: #11330b;
+        border: 1px solid #cce7d0;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+        
+    </div>
+    <div class="pro" style=" width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #088178;
+    border-radius:25px ;
+    transition:0.2s ease;
+    position: relative;
+    margin: 10px;
+    ">
+        <img src="img/backgroundnew/cover3.jpg" alt="" style="width: 100%;
+        border-radius:20px ;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+        margin: 15px 0;">
+        <div class="des" style="text-align: start;
+        padding: 10px 0;">
+<span style=" color: #b826a4;
+font-size: 12px;">Pencils</span>
+<h5 style="padding-top:7px ;
+color: #11330b;
+font-size: 14px;">Pencils</h5>
+<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+</div>
+<h4 style="padding-top: 7px;
+font-size: 15px;
+font-weight: 700;
+color: #228be0;">LKR100</h4>
+        </div>
+        <a href="#" style=" width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #cce7d0;
+        font-weight: 500;
+        color: #11330b;
+        border: 1px solid #cce7d0;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+        
+    </div>
+    <div class="pro" style=" width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #088178;
+    border-radius:25px ;
+    transition:0.2s ease;
+    position: relative;
+    margin: 10px;
+    ">
+        <img src="img/backgroundnew/cover3.jpg" alt="" style="width: 100%;
+        border-radius:20px ;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+        margin: 15px 0;">
+        <div class="des" style="text-align: start;
+        padding: 10px 0;">
+<span style=" color: #b826a4;
+font-size: 12px;">Pencils</span>
+<h5 style="padding-top:7px ;
+color: #11330b;
+font-size: 14px;">Pencils</h5>
+<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+</div>
+<h4 style="padding-top: 7px;
+font-size: 15px;
+font-weight: 700;
+color: #228be0;">LKR100</h4>
+        </div>
+        <a href="#" style=" width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #cce7d0;
+        font-weight: 500;
+        color: #11330b;
+        border: 1px solid #cce7d0;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+        
+    </div>
+    <div class="pro" style=" width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #088178;
+    border-radius:25px ;
+    transition:0.2s ease;
+    position: relative;
+    margin: 10px;
+    ">
+        <img src="img/backgroundnew/cover3.jpg" alt="" style="width: 100%;
+        border-radius:20px ;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+        margin: 15px 0;">
+        <div class="des" style="text-align: start;
+        padding: 10px 0;">
+<span style=" color: #b826a4;
+font-size: 12px;">Pencils</span>
+<h5 style="padding-top:7px ;
+color: #11330b;
+font-size: 14px;">Pencils</h5>
+<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+</div>
+<h4 style="padding-top: 7px;
+font-size: 15px;
+font-weight: 700;
+color: #228be0;">LKR100</h4>
+        </div>
+        <a href="#" style=" width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #cce7d0;
+        font-weight: 500;
+        color: #11330b;
+        border: 1px solid #cce7d0;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+        
+    </div>
+    <div class="pro" style=" width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #088178;
+    border-radius:25px ;
+    transition:0.2s ease;
+    position: relative;
+    margin: 10px;
+    ">
+        <img src="img/backgroundnew/cover3.jpg" alt="" style="width: 100%;
+        border-radius:20px ;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+        margin: 15px 0;">
+        <div class="des" style="text-align: start;
+        padding: 10px 0;">
+<span style=" color: #b826a4;
+font-size: 12px;">Pencils</span>
+<h5 style="padding-top:7px ;
+color: #11330b;
+font-size: 14px;">Pencils</h5>
+<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+</div>
+<h4 style="padding-top: 7px;
+font-size: 15px;
+font-weight: 700;
+color: #228be0;">LKR100</h4>
+        </div>
+        <a href="#" style=" width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #cce7d0;
+        font-weight: 500;
+        color: #11330b;
+        border: 1px solid #cce7d0;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+        
+    </div>
+    <div class="pro" style=" width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #088178;
+    border-radius:25px ;
+    transition:0.2s ease;
+    position: relative;
+    margin: 10px;
+    ">
+        <img src="img/backgroundnew/cover3.jpg" alt="" style="width: 100%;
+        border-radius:20px ;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+        margin: 15px 0;">
+        <div class="des" style="text-align: start;
+        padding: 10px 0;">
+<span style=" color: #b826a4;
+font-size: 12px;">Pencils</span>
+<h5 style="padding-top:7px ;
+color: #11330b;
+font-size: 14px;">Pencils</h5>
+<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+</div>
+<h4 style="padding-top: 7px;
+font-size: 15px;
+font-weight: 700;
+color: #228be0;">LKR100</h4>
+        </div>
+        <a href="#" style=" width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #cce7d0;
+        font-weight: 500;
+        color: #11330b;
+        border: 1px solid #cce7d0;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+        
+    </div>
+    <div class="pro" style=" width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #088178;
+    border-radius:25px ;
+    transition:0.2s ease;
+    position: relative;
+    margin: 10px;
+    ">
+        <img src="img/backgroundnew/cover3.jpg" alt="" style="width: 100%;
+        border-radius:20px ;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+        margin: 15px 0;">
+        <div class="des" style="text-align: start;
+        padding: 10px 0;">
+<span style=" color: #b826a4;
+font-size: 12px;">Pencils</span>
+<h5 style="padding-top:7px ;
+color: #11330b;
+font-size: 14px;">Pencils</h5>
+<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+</div>
+<h4 style="padding-top: 7px;
+font-size: 15px;
+font-weight: 700;
+color: #228be0;">LKR100</h4>
+        </div>
+        <a href="#" style=" width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50px;
+        background-color: #cce7d0;
+        font-weight: 500;
+        color: #11330b;
+        border: 1px solid #cce7d0;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;">
+            <i class="fa-solid fa-cart-shopping cart"></i>
+        </a>
+        
+    </div>
+</div>
+    </section>
+
+    <section id="banner" class="section-m1" style="text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('');
+    background-color: black;
+    width: 100%;
+    height: 40vh;
+    background-position:center;
+    background-size: cover;">
+        <h4 style="color: aliceblue;">repire service</h4>
+        <h2 style="color: #cce7d0;">best <span style="color: yellowgreen;">offer</span> you have never seen</h2>
+        <button class="normal"> <a href="contact.html" style="text-decoration: none;">contact us</a></button>
+
+
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+        <h4>sign up your news letters</h4>
+        <p>get e-mail update about our latest shop and <span>new offers.</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="your e-mail address">
+        <button class="normal">sign in</button>
+    </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="img/backgroundnew/logo.png" alt="" class="logo" style="width: 100px;">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 141/6  Bogahapathana  Udadumbara <br></p>
+            <p><strong>Phone:</strong>0779485295</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+       <!--  <div class="col">
+            <h4>about</h4>
+            <a href="#">about us</a>
+            <a href="#">contact us</a>
+        </div>
+
+        <div class="col">
+            <h4>My account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View cart</a>
+            <a href="#">Help</a>
+        </div> -->
+        
+    </footer>
+    <div class="copyright">
+        <p>@2021, Tech2 etc-HTML CSS Ecommerce Tmplate</p>
+    </div>
+    
+    
+<script src="script.js"></script>
+</body>
+</html>

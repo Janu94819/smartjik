@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>contact</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site.pdn.ac.lk/cgu/assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+     />
+     <link rel="stylesheet" href="style1.css">
+
+
+
+      <style>
+        .star i{
+            font-size: 12px;
+            color: #eeb20e;
+        }
+
+        #close{
+            display: none;
+        }
+
+        @media (max-width:900px) {
+           
+            .section-p1{
+    padding: 40px 40px;
+}
+            #newsletter .form{
+            width: 90%;
+        }
+        #navbar.active{
+        right: 0px;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 200px;
+        background-color: #f0f3f1;
+        box-shadow: 0 40px 60px rgba(90, 87, 87, 0.03);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #close{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #121311;
+        font-size: 24px;
+        display: initial;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #hero{
+            
+            height: 70vh;
+             padding: 0 80px;
+             background-position: top 10% right 10%;
+           
+        }
+        #feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* #feature .fe-box{
+    
+    margin: 15px 15px;
+
+} */
+
+.pro-container{
+    justify-content: center;
+}
+
+footer{
+
+    justify-content: center;
+    text-align: center;
+
+
+        }
+
+
+        
+     </style>
+</head>
+<body>
+
+   <section id="header">
+        <a href="#" style="text-decoration:none;">
+            <img src="img/backgroundnew/logo.png" alt="" class="logo" style="width:100px;">
+        </a>
+        <div>
+            <ul id="navbar">
+                <li>
+                    <a class="active" href="index.html">home</a></li>
+                   <!-- <li> <a href="product.html">shop</a></li> -->
+                    <!-- <li><a href="about.html">about</a></li> -->
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="login/login_form.php">Login</a></li>
+                    <!-- <li><a href="login/admin_page">Admin</a></li> -->
+                   
+                
+                    <!-- <li><a href="image upload/cart_images.php">cart img</a> </li>
+                   <li><a href="cart.html" id="lg-bag"><i class="fa-solid fa-cart-shopping"></i></a></li> -->
+                   <a href="#" id="close"><i class="fas fa-times"></i></a>
+                       
+                    
+                   
+                </li>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+            
+        </div>
+    </section>
+   
+
+   
+   <div class="container mt-3">
+  <h2>Send us your message</h2>
+ <form action="https://api.web3forms.com/submit" method="POST">
+   <input type="hidden" name="access_key" value="75a3e182-e08b-4155-8c62-905268c394f4">
+     <div class="mb-3 mt-3">
+      <label for="Name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+    </div>
+     <div class="mb-3 mt-3">
+      <label for="Phone_number">Phone_number:</label>
+      <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" name="phone"required >
+    </div>
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="Message">Message:</label>
+       <textarea class="form-control" id="msg" name="msg" rows="3" placeholder="Enter your Message" required></textarea>
+    </div>
+    <!-- <div class="form-check mb-3"> -->
+      <!-- <label class="form-check-label"> -->
+      
+      <!-- </label> -->
+    <!-- </div> -->
+    <button type="submit" class="btn btn-primary" style="background-color:black;color: white;">Send</button>
+     <button type="reset" class="btn btn-primary" style="background-color: black;color: white;">Reset</button>
+
+  </form>
+  
+</div>
+<script src="script.js"></script>
+</body>
+</html>
